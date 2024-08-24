@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!---------Celebration page--------->
+    <div class="celeb hidden">
+        <div class="icons">
+            <img src="./assets/Vector.png" alt="">
+        </div>
+        <h1>HURRAY!!!</h1>
+        <P>YOU WON THE GAME</P>
+        <button class="playAgain" id="playAgain2">PLAY AGAIN</button>
+    </div>
+
+    <!-------score Board------>
+    <div class="score-card">
+        <div class="title">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+        </div>
+        <div class="scores">
+            <div class="score">
+                <p>COMPUTER <br> SCORE</p>
+                <div id="compScore">0</div>
+            </div>
+            <div class="score">
+                <p>YOUR <br> SCORE</p>
+                <div id="userScore">0</div>
+            </div>
+        </div>
+    </div>
+
+    <!-------Game center-------->
+    <div class="hand">
+        <div class="rock" id="rock">
+            <img src="./assets/icons8-fist-67 1.png" alt="rock">
+        </div>
+        <div class="paper" id="paper">
+            <img src="./assets/icons8-hand-64 1.png" alt="paper">
+        </div>
+        <div class="scissor" id="scissor">
+            <img src="./assets/scissor.png" alt="scissor">
+        </div>        
+    </div>
+
+    <div class="arena hidden">
+        <div class="side" id="user">
+            <p>YOU PICKED</p>
+            
+        </div>
+        <div class="middle">
+            <div id="verdict"><h1>YOU WIN</h1><P>AGAINST PC</P></div>
+            <button class="playAgain" id="playAgain">PLAY AGAIN</button>
+        </div>
+        <div class="side" id="comp">
+            <p>PC PICKED</p>
+              
+        </div>
+
+    </div>
+
+    <!-----------Rule box-------->
+    <div class="rule-box hidden">
+        <div class="cross"> <img src="./assets/X.png" alt="x"> </div>
+        <img src="./assets/rules.png" alt="rules">
+    </div>
+
+    <div class="footer">
+        <div class="btn" id="gamerule">RULES</div>
+        <div class="btn hidden" id="next">NEXT</div>
+    </div>
+    
+     <!-- ------highlighter-------------
+     <div class="outer-circle">
+        <div class="inner-circle">
+            <div class="minner-circle"></div>
+        </div>
+    </div> -->
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

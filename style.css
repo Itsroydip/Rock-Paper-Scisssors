@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    background-color: #8CC461;
+    position: relative;
+    height: 738px;
+    overflow: hidden;
+}
+
+.score-card{
+    width: 800px;
+    height: auto;
+    margin: 62px auto 0px auto;
+    padding: 15px;
+    border-radius: 13px;
+    border: solid 3px #FFFFFF;
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.88px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFF;
+    
+}
+
+.scores{
+    display:flex;
+}
+
+.score{
+    height: 128px;
+    width: 139px;
+    padding: 10px 0;
+    margin-left: 15px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    color: #656565;
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 19.92px;
+    letter-spacing: 0.1em;
+    text-align:center;
+
+}
+
+.score div{
+    color: #252525;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 79.69px;
+    text-align: center;
+    
+}
+
+.hand{
+    height: 400px;
+    width:430px;
+    margin: 80px auto 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(./assets/triangle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 270px;
+    
+}
+
+.rock{
+    height: 110px;
+    width: 110px;
+    background: #FFFFFF;
+    border: 16px solid #0074B6;
+    box-shadow: -1px 1px 11px 0px #00000059;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.rock:hover, .paper:hover, .scissor:hover{
+    transform: translateY(-3px);
+    transition: all 0.3s;
+}
+
+.hand .rock{
+    margin-right: 120px;
+}
+
+.paper{
+    height: 110px;
+    width: 110px;
+    background: #FFFFFF;
+    border: 16px solid #FFA943;
+    box-shadow: -1px 1px 11px 0px #00000059;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scissor{
+    height: 110px;
+    width: 110px;
+    background: #FFFFFF;
+    border: 16px solid #BD00FF;
+    box-shadow: -1px 1px 11px 0px #00000059;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn{
+    height: 40px;
+    width: 119px;
+    margin-right: 20px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24.61px;
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.footer{
+    display: flex;
+    position: absolute;
+    bottom: 30px; 
+    right: 0px;  
+}
+
+.rule-box{
+    height:367px;
+    width: 300px;
+    position: absolute;
+    right: 20px;
+    bottom: 110px;
+}
+
+.cross{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #FF0000;
+    border: 5px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(250px) translateY(25px);
+    cursor: pointer;    
+}
+
+.arena{
+    width: 883px;
+    height: 350px;
+    margin: 80px auto 0 auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    /* background-color: #0074B6; */
+    color: #FFFFFF;
+}
+
+.side{
+    /* background-image: url(./assets/highlighter.png); */
+    background-repeat:no-repeat;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.side div{
+    height: 140px;
+    width:140px
+}
+
+.side p{
+    position: absolute;
+    top: 36px;
+}
+
+.middle{
+    width: 183px;
+}
+
+#verdict h1{
+    font-size: 37px;
+    font-weight: 800;
+    line-height: 45.7px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+}
+
+#verdict p{
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 29.3px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+}
+
+.playAgain{
+    height: 44px;
+    width: 174px;
+    margin-top: 20px;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    color: #6B6B6B;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 17.58px;
+    letter-spacing: 0.1em;
+    text-align: center;  
+    cursor:pointer; 
+}
+
+.outer-circle{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-color: rgba(46, 154, 37, 0.39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    z-index: -1;
+}
+
+.inner-circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgba(29, 168, 43, 0.79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minner-circle{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: rgba(59, 103, 32, 0.4);
+}
+
+.celeb{
+    color: #FFFFFF;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.celeb h1{
+    font-size: 91px;
+    font-weight: 600;
+    line-height: 106.64px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.celeb p{
+    font-size: 41px;
+    font-weight: 600;
+    line-height: 48.05px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 30px;    
+}
+
+.icons{
+    width: 504px;
+    height: 297px;
+    margin: 120px auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    background-image: url(./assets/Group\ 5.png);
+
+}
+
+        
+
+.hidden{
+    display: none;
+}
